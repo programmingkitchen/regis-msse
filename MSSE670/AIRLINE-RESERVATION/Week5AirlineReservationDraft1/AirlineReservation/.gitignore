@@ -1,0 +1,5 @@
+bin/*
+bin/com/*
+bin/com/flightreservation/*
+bin/com/flightreservation/model/*
+bin/com/flightreservation/model/domain/*
