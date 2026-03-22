@@ -1,4 +1,4 @@
-# Test Case Analysis
+# Vibe Coding Test Case Analysis
 
 Revised: 3/22/2026
 
