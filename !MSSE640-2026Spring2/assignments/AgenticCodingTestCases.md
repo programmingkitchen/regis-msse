@@ -1,12 +1,23 @@
-# Vibe Coding Test Case Analysis
+# Vibe Coding Mini Project: Test Case Analysis
 
-Revised: 3/22/2026
+Revised: 4/3/2026
 
 ## Vibe Coding Test Case Analysis Instructions (General)
 
 - Research the test case topic for the week, e.g. **Equivalence Classes/Boundary Values**.
 - You can focus on one or more of the types of test cases for the week.
-- You are encouraged to use AI tools, e.g. ChatGPT, Git Hub Copilot, Claude Code, Replit, etc.
+- Using an Agentic AI tools, e.g. ChatGPT, Git Hub Copilot, Claude Code, Replit, etc., write come code or create an app using "no code" that illustrates the Test Case for the Week.  
+
+## Think out of the box and get creative
+
+- The purpose of the assignment is to gain more experience with software testing while gaining skills with Agentic coding assistant tools.   
+- With the no code tools, you can program anything that you can think of.  
+- Here is a screen shot of a game that I created live in class.  This illustrates interactive black box testing techniques, in this case, Equivalence Classes/Boundary Values. 
+- Can you think of a more creative way to illustrate the techniques?  Can ChatGPT think of any good ideas?  
+
+### Bug Hunter Screen Shot Created in Replit 
+
+![Bug Hunter Screen Shot created in Replit](images/bughunter.png)
 
 ## Current Schedule
 
