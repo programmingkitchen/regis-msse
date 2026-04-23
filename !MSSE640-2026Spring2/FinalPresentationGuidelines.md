@@ -19,7 +19,9 @@
     - Project 3: Jmeter
     - Project 4: Selenium
 
-3. Analysis of Agentic AI coding tools
+3. Short demo of one of the tests
+
+4. Analysis of Agentic AI coding tools
     - Provide your analysis of the pros and cons of Agentic AI tools with a special focus on testing. 
     - Use real examples from working your assignments in this class. 
     - What special considerations do we need to think about for testing? 
