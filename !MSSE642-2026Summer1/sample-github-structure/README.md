@@ -13,5 +13,22 @@
 
 - See the example in "sample-github-structure," but your structure should start at the root of your repo.  
 
-
-
+```bash
+.
+├── assignments
+│   ├── images
+│   │   └── sample-images.png
+│   ├── research-presentation
+│   │   └── research-presentation.md
+│   ├── vibe-coding-assignments
+│   │   ├── vibe-coding-1.md
+│   │   ├── vibe-coding-2.md
+│   │   └── vibe-coding-3.md
+│   └── weekly-projects
+│       ├── project-1-labsetup.md
+│       ├── project-2-threat-analysis.md
+│       ├── project-3-penlab-1.md
+│       └── project-4-penlab-2.md
+├── code
+└── README.md
+```
