@@ -1,1 +1,3 @@
 # Security Risk Analysis Vibe Coding Assignment #2
+
+##  THIS IS A SAMPLE DOCUMENT TO ILLUSTRATE HOW TO STRUCTURE WHAT YOU TURN IN.

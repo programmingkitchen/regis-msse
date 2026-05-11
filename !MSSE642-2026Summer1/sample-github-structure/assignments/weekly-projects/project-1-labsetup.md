@@ -1,1 +1,3 @@
 # Project #1:  Kali Penetration Testing Lab Setup
+
+##  THIS IS A SAMPLE DOCUMENT TO ILLUSTRATE HOW TO STRUCTURE WHAT YOU TURN IN.

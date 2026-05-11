@@ -119,9 +119,9 @@ To github.com:programmingkitchen/MSSE642-2026Spring.git
 branch 'main' set up to track 'origin/main'.
 ```
 
-- I will put things in my repo.  It's public.  You can clone it on your PC. 
+- I will put things in my repo.  It's public.  You can clone it on your PC or Mac.  Look for the correct folder for the class. 
 
-[MSSE642-2026Spring on GitHub](https://github.com/programmingkitchen/MSSE642-2026Spring.git)
+[MY Regis MSSE Repo on GitHub](https://github.com/programmingkitchen/regis-msse.git)
 
 #### Figure 4
 ![alt text](images/figure4.png)

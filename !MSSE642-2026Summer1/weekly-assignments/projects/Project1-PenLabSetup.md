@@ -1,4 +1,5 @@
-# Hands on Assignment #1:  Pen Testing Lab Setup: Penetration  Testing with Kali Linux
+# HANDS-ON ASSIGNMENT #1:  PENETRATION TESTING LAB SET UP
+## Pen Testing Lab Setup: Penetration  Testing with Kali Linux
 
 - Version 3.0
 - Latest Revision:  5/10/2026
