@@ -281,3 +281,14 @@ regis-msse
 
 ![Git flow diagram](images/vsc-5.png)
 
+- After you save your changes and are ready to commit them and push them, select the branch icon on the far left.  You will see your changes and your commit history.  
+
+![Git flow diagram](images/vsc-6.png)
+
+- The next step is to "stage" your changes.  This indicates that you want to commit the files that you staged.  Usually, you stage everything you changed, but you can select a subset of the files that you have changed.  
+- Click the "+" icon on the "Changes" line to stage all of the changes.  
+- Now you are ready to "Commit."  Commit saves the changes to the local repo.  
+- You will need to write a commit message, but you can click the icon in the message window to let AI do it for you.  
+
+
+
