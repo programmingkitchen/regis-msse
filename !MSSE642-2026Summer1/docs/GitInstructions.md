@@ -290,5 +290,13 @@ regis-msse
 - Now you are ready to "Commit."  Commit saves the changes to the local repo.  
 - You will need to write a commit message, but you can click the icon in the message window to let AI do it for you.  
 
+- You can make multiple commit to your local repo, without pushing to the remote repo.  
 
+![alt text](images/vsc-9.png)
+
+- The final step is to push the changes to the remote branch.  
+
+![alt text](images/vsc-10.png)
+
+### Merging the remote branch with the main branch (and cleanup)
 
