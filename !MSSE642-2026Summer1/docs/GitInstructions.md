@@ -1,5 +1,15 @@
 # Guide to using Git and Git Hub
 
+## Git Basics
+
+- Distrubuted
+- Local repo is private
+- Commit IDs that are hashed
+- Collaborating: fork or clone a repo
+- Use branches to make all changes 
+
+![Git Basics](images/git-basics.png)
+
 ## Setting up a new Repo in Git Hub
 
 ### Creating a NEW remote repo 
@@ -11,13 +21,13 @@
 
 The link the this test repo is: 
 
-https://github.com/programmingkitchen/test.git
+[Test repo](https://github.com/programmingkitchen/test.git)
 
 ## Creating a local repo from scratch (using CLI, e.g. WSL)
 
 ### For submitting your assignments
 
-> WARNING:  This is a procedure for creating a new remote repo in Git Hub and a new local Repo from scratch.  When you start both repos are empty.  If you want to set up a local repo from a remote repo that already has files and a commit history, then you will follow the procedure to "clone" the repo.  This is how you will get the repo that I set up for this class. 
+> **WARNING:**  This is a procedure for creating a new remote repo in Git Hub and a new local Repo from scratch.  When you start both repos are empty.  If you want to set up a local repo from a remote repo that already has files and a commit history, then you will follow the procedure to "clone" the repo.  This is how you will get the repo that I set up for this class. 
 
 > NOTE:  This procedure uses Fedora 42 running on WSL.  Setting up WSL and connecting to it from VSC is beyond the scope of this document.  If you need help with this, ask in Slack.  
 
@@ -26,12 +36,12 @@ https://github.com/programmingkitchen/test.git
 - On your local machine, create a parent directory called github.
 
 ```bash
-
 mkdir github
+```
 
+```bash
 rhuser@DellXPS:~/github$ pwd
 /home/rhuser/github
-
 ```
 
 - Change into that directory on your local machine make a directory with the same name as the remote repo (you just created) and change into it. 
@@ -150,18 +160,20 @@ drwxr-xr-x  7 rhuser rhuser 4096 Mar 14 11:10  MSSE670-23Fall2
 ```
 
 - Here are some other helpful commands that you can run on a local repo that is already set up. 
-
+- Look at the remote repo that is connected to the local repo (you set this up earlier). 
 ```bash
 rhuser@DellXPS:~/github/REGIS-MSSE$ git remote -v
 origin  git@github.com:programmingkitchen/regis-msse.git (fetch)
 origin  git@github.com:programmingkitchen/regis-msse.git (push)
 ```
+- Investigate the local branches 
 
 ```bash
 rhuser@DellXPS:~/github/REGIS-MSSE$ git branch
 * feat/project-3
   main
 ```
+- Investigate the remote branches. 
 
 ```bash
 rhuser@DellXPS:~/github/REGIS-MSSE$ git branch -r
@@ -201,7 +213,7 @@ rhuser@DellXPS:~/github/REGIS-MSSE/test$
 - You cannot write to it (because I have not given you access), but you can pull all the changes that I make and see them on your local machine.  
 - This will be helpful for things like directly copying the sample directory structure so you can use it without having to recreate it.  
 
-> I made a temporary directory for cloning the class directory again.  This illustrates how all of the logic is contained in the directory and you can have many copies of local repos distributed anywhere you want. 
+> **NOTE:** I made a temporary directory for cloning the class directory again.  This illustrates how all of the logic is contained in the directory and you can have many copies of local repos distributed anywhere you want. 
 
 
 - To clone the class repo:
@@ -223,7 +235,7 @@ regis-msse
 
 ```
 
-> NOTE: with this command syntax, a directory with the same name as the remote repo is created automatically in your current directory. 
+> **NOTE:** with this command syntax, a directory with the same name as the remote repo is created automatically in your current directory. 
 
 
 ## Integrating with VSC 
@@ -264,7 +276,7 @@ regis-msse
 ### Overview 
 
 - When you first start using Git, you may be tempted to just work directly with the main branch.  This saves the step of integrating your changes into the main branch and then cleaning up by deleting your working branches.  This is not a big deal if you are working alone (I did it for years), but I would recommend starting off doing things the right way, even though it requires a few more steps.  
-- When working in "the real world," you will always collaborte with others and you will always create branches for your work.  If the system is set up correctly, the main branch will be "protected" which means that you will not be allowed to write changes directly to it.   
+- When working in "the real world," you will always collaborate with others and you will always create branches for your work.  If the system is set up correctly, the main branch will be "protected" which means that you will not be allowed to write changes directly to it.   
 - Git take a while to learn, especially when collaborating, so I recommend starting off doing things the right way.  
 - It also provides an extra layer of protection since all your commits will be done to your working branch, not the main branch.  
 
@@ -272,10 +284,10 @@ regis-msse
 
 ### Using VSC to create a new branch and push your code to the remote branch.  
 
-> NOTE:  You can do all of these steps from the command line, but I recommend using the VSC GUI.  The CLI can be helpful in checking things. 
+> **NOTE:**  You can do all of these steps from the command line, but I recommend using the VSC GUI.  The CLI can be helpful in checking things. 
 
 - Click the little branch icon at the bottom, and create a new branch and name it based on "feature" or "fix."  For example, feat/test-branch
-- The window at thye top will show you the local branches that exist as well as the remote branches, which you can tell because the start with "origin" 
+- The window at the top will show you the local branches that exist as well as the remote branches, which you can tell because the start with "origin" 
 - I'm working on the local feat-project-3 branch and I'm pushing my changes to the remote branch, origin/feat/project-3.
 - But you don't have to worry about that once you are set up.  You just click buttons from here on out.  
 
@@ -294,9 +306,10 @@ regis-msse
 
 ![alt text](images/vsc-9.png)
 
-- The final step is to push the changes to the remote branch.  
+- The final step is to push the changes to the remote branch.
+- In VSC this means selected the "Sync Changes" button which will both pull changes made to the remote banch and push your changes to the remote branch.   
 
 ![alt text](images/vsc-10.png)
 
-### Merging the remote branch with the main branch (and cleanup)
+### Pull Requests: Merging the remote branch with the main branch (and cleanup)
 
