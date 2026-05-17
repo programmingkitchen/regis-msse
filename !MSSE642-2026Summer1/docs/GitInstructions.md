@@ -312,3 +312,60 @@ regis-msse
 ![alt text](images/vsc-10.png)
 
 ### Pull Requests: Merging the remote branch with the main branch (and cleanup)
+
+- After you have pushed some commits to the remote branch, you will see a notice when you select the branch in the Git Hub, telling you how many commits the branch is ahead of the main.  This means that you can do a pull request to merge the branch into the main so that those changes are locked in.   You will do this whenever you finish a new "feature" or "fix."  
+
+![Pull Request](images/pull-req-1.png)
+
+- Select "Pull requests" from the top navigation and select "New pull request."  
+
+![Pull Request](images/pull-req-2.png)
+
+- At the top, you will need to select which branches you are merging.
+- Make a note of the arrow from the right to the left indicating you are merging the feature (right) into the main (left). 
+- Select "Create pull request" 
+
+![Pull Request](images/pull-req-3.png)
+
+- Co-pilot can review your pull requests.  I've only recently started working with this, but it seems to do a very good job.  
+- It catches everything from spelling mistakes to issue with your code. 
+
+![Pull Request](images/pull-req-4.png)
+
+- Make copilot a reviewer
+
+![Pull Request](images/pull-req-5.png)
+
+- It might take Copilot a while to come up with suggestions so grab a cup of coffee. 
+
+![Pull Request](images/pull-req-6.png)
+
+- Copilot will generate detailed results, probably better than a human could do. 
+
+![Pull Request](images/pull-req-7.png)
+
+#### Example of a minor change
+
+![Pull Request](images/pull-req-8.png)
+
+#### Example of how copilot fixed outdated instructions 
+
+![Pull Request](images/pull-req-9.png)
+
+### Cleanup 
+
+- After your pull request is complete, delete both the remote and the local branch to start over. 
+- When you complete the pull request in Git Hub, you will have the option to delete the branch. 
+- On your local machine, switch from the feature branch to the main branch. 
+- You will need to pull the code from the pull request into the local main branch.  Run these commands. The fetch -p, updates the metadata (you will be able to see that the remote branch has been deleted). The git pull will pull the commit history (the pull request) into the local main branch.  
+- Now you can start over by making a new branch. 
+
+```bash
+git fetch -p
+git pull
+```
+
+
+
+
+
