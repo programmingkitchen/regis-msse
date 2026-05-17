@@ -1,4 +1,4 @@
-# Hands-On Assignment #2: Vulnerability Analysis
+# HANDS-ON PROJECT #2: Vulnerability Analysis
 
 ## Assignment 2 Group Project: The Secure Software Development Lifecycle and the Threat Model
 
