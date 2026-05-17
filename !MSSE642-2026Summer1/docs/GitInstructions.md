@@ -1,4 +1,4 @@
-# Guide to using Git and Git Hub
+# Guide to using Git and GitHub
 
 ## Git Basics
 
@@ -10,14 +10,14 @@
 
 ![Git Basics](images/git-basics.png)
 
-## Setting up a new Repo in Git Hub
+## Setting up a new Repo in GitHub
 
 ### Creating a NEW remote repo 
-- Create a Git Hub Account 
+- Create a GitHub Account
 
 - Name the repo and "Create Repository" 
 
-- You can connect to the repo using https or ssh.  HTTPS will require password authentication when you write to the repo.  With SSH you can install a public RSA key and write without a password.  If you configure RSA keys, you will need to load the public key into Git Hub and you will need to edit your ssh configuration file to use the key.   The details are beyond the scope of this document.  My recommendation is to connect with https and supply a password, which will be stored in a password manager. 
+- You can connect to the repo using https or ssh.  HTTPS will require password authentication when you write to the repo.  With SSH you can install a public RSA key and write without a password.  If you configure RSA keys, you will need to load the public key into GitHub and you will need to edit your ssh configuration file to use the key.   The details are beyond the scope of this document.  My recommendation is to connect with https and supply a password, which will be stored in a password manager.
 
 The link the this test repo is: 
 
@@ -27,7 +27,7 @@ The link the this test repo is:
 
 ### For submitting your assignments
 
-> **WARNING:**  This is a procedure for creating a new remote repo in Git Hub and a new local Repo from scratch.  When you start both repos are empty.  If you want to set up a local repo from a remote repo that already has files and a commit history, then you will follow the procedure to "clone" the repo.  This is how you will get the repo that I set up for this class. 
+> **WARNING:**  This is a procedure for creating a new remote repo in GitHub and a new local Repo from scratch.  When you start both repos are empty.  If you want to set up a local repo from a remote repo that already has files and a commit history, then you will follow the procedure to "clone" the repo.  This is how you will get the repo that I set up for this class.
 
 > NOTE:  This procedure uses Fedora 42 running on WSL.  Setting up WSL and connecting to it from VSC is beyond the scope of this document.  If you need help with this, ask in Slack.  
 
@@ -55,11 +55,11 @@ rhuser@DellXPS:~/github$ cd test
 - Follow the instructions presented in GitHub for creating your local repo.  
 - These procedures can be done via the command line in Windows using WSL or on the MAC using the terminal.  
 - You can also do this first step in Visual Studio Code (VSC) or your IDE of choice as well, but my recommendation is to do it at the CLI before integrating with  VSC.
-- At the end of this procedure, you will have a remote repo, a local repo connected to the remote, and committed changes, located in both the local and remote repo.  Refresh your browser to see your changes in Git Hub.  
+- At the end of this procedure, you will have a remote repo, a local repo connected to the remote, and committed changes, located in both the local and remote repo.  Refresh your browser to see your changes in GitHub.
 
-![New repo in Git Hub setup](images/github-3.png)
+![New repo in GitHub setup](images/github-3.png)
 
-### Commands from Git Hub for HTTP access
+### Commands from GitHub for HTTP access
 
 ```bash
 echo "# test" >> README.md
@@ -118,15 +118,15 @@ rhuser@DellXPS:~/github/test$
 
 ### Verify the results 
 
-- What you seen in Git Hub after refreshing your browser. 
+- What you seen in GitHub after refreshing your browser.
 
-![New repo in Git Hub](images/github-4.png)
+![New repo in GitHub](images/github-4.png)
 
 
 
 ## Organizing and Investigating Local Repos at the CLI 
 
-- As I mentioned earlier I like to put all of my Git Hub repos in a directory called "github."  This helps me distinguish between other repos like "Azure Dev Ops" which functions like Git Hub.  
+- As I mentioned earlier I like to put all of my GitHub repos in a directory called "github."  This helps me distinguish between other repos like "Azure Dev Ops" which functions like GitHub.
 
 - In WSL this looks like this: 
 
@@ -218,7 +218,7 @@ rhuser@DellXPS:~/github/REGIS-MSSE/test$
 
 - To clone the class repo:
 
-![New repo in Git Hub](images/github-5.png)
+![New repo in GitHub](images/github-5.png)
 
 ```bash
 rhuser@DellXPS:~/foo$ git clone https://github.com/programmingkitchen/regis-msse.git
@@ -245,7 +245,7 @@ regis-msse
 - You will see:
     1. The left pane for files
     2. The middle pane where I code.
-    3. The right pane where I use an AI agent (I use Git Hub Copilot).
+    3. The right pane where I use an AI agent (I use GitHub Copilot).
     4. The bottom pane, which is a Bash terminal window connected to WSL.  
 - You can set this up the way you like to work.  
 - There are many extensions that you can install to provide additional functionality. 
@@ -312,4 +312,3 @@ regis-msse
 ![alt text](images/vsc-10.png)
 
 ### Pull Requests: Merging the remote branch with the main branch (and cleanup)
-
