@@ -20,7 +20,7 @@
  
 ## What to turn In
 
-- In your repo, submit a pull request to merge your assignment into the main branch. 
+- In your repo, submit a pull request to merge the branch that you used for your assignment into the main branch.
 - Submit your assignment in Markdown in assignments > weekly-projects > project-1-labsetup.md (see "sample-github-structure" folder)
 - Put your images in a separate "images" directory (see "sample-github-structure" folder)
 - Write up the final state of your lab using screen shots to illustrate what you did. 

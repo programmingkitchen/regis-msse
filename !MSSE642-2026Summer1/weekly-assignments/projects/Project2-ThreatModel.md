@@ -151,11 +151,12 @@ Using the links below for the OWASP Generic Steps for Threat Modeling, complete 
 - [OWASP Threat Modeling Category](https://wiki.owasp.org/index.php/Category:Threat_Modeling)
 - [OWASP Application Threat Modeling](https://owasp.org/www-community/Application_Threat_Modeling)
 
-**Submission:** Submit a Word document named in the following format (Mac users should submit a PDF):
+## What to turn In
 
-```
-LastnameFirstname_Assignment2.doc
-```
+- In your repo, submit a pull request to merge the branch that you used for your assignment into the main branch. 
+- Submit your assignment in Markdown in assignments > weekly-projects > project-2-threat-analysis.md (see "sample-github-structure" folder)
+- Put your images in a separate "images" directory (see "sample-github-structure" folder)
+- In the week, when the assignment it due, post in Slack a link to your assignment (main branch only). 
 
 ---
 
