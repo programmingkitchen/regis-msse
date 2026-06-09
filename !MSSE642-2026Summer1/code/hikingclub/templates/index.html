@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+    <title>Georgia Hiking Club Demo</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    >
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Georgia Hiking Club</h1>
+        <p>Mock web application routes from the project specification.</p>
+      </div>
+    </header>
+
+    <main class="container page-grid">
+      <aside class="panel">
+        <h2>Authentication</h2>
+        <ul>
+          <li>POST /auth/login</li>
+          <li>POST /auth/logout</li>
+          <li>POST /auth/change-password</li>
+          <li>GET /security/password-policy</li>
+          <li>PUT /security/password-policy</li>
+        </ul>
+      </aside>
+
+      <section class="panel">
+        <h2>Trips and Members</h2>
+        <ul>
+          <li>GET, POST /members</li>
+          <li>GET, PUT /members/&lt;member_id&gt;/profile</li>
+          <li>GET, PUT /members/&lt;member_id&gt;/medical</li>
+          <li>GET, POST /trips</li>
+          <li>GET /trips/local</li>
+          <li>GET /trips/excursions</li>
+          <li>POST /trips/&lt;trip_id&gt;/register</li>
+          <li>GET /trips/&lt;trip_id&gt;/waitlist</li>
+          <li>POST /trips/&lt;trip_id&gt;/waitlist/promote</li>
+          <li>POST /trips/&lt;trip_id&gt;/attendance/&lt;member_id&gt;</li>
+        </ul>
+
+        <div class="chatbot" aria-label="Hiking Club Chatbot">
+          <h3>Hiking Club Assistant</h3>
+          <div id="chat-log" class="chat-log">
+            <div class="chat-message bot">
+              Hi, ask me about trips, payments, members, or security.
+            </div>
+          </div>
+          <form id="chat-form" class="chat-form">
+            <label for="chat-input" class="visually-hidden">Chat message</label>
+            <input
+              id="chat-input"
+              name="message"
+              type="text"
+              placeholder="Type your question"
+              autocomplete="off"
+              required
+            >
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <h2>Upcoming Events</h2>
+        <p class="events-intro">
+          Placeholder feed inspired by Atlanta Outdoor Club home page cards.
+        </p>
+
+        <div class="event-list">
+          {% for event in upcoming_events %}
+          <a class="event-card-link" href="{{ url_for('event_detail', event_id=event.id) }}">
+            <article class="event-card">
+              <div class="event-date">
+                <span class="month">{{ event.month }}</span>
+                <span class="day">{{ event.day }}</span>
+                <span class="time">{{ event.time }}</span>
+              </div>
+              <div class="event-meta">
+                <h3>{{ event.title }}</h3>
+                <p class="status {{ event.status_class }}">
+                  {{ event.status }} | {{ event.difficulty }}
+                </p>
+                <p>{{ event.spots }}</p>
+              </div>
+            </article>
+          </a>
+          {% endfor %}
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          Georgia Hiking Club Demo App | Flask mock implementation | No database
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const chatForm = document.getElementById("chat-form");
+      const chatInput = document.getElementById("chat-input");
+      const chatLog = document.getElementById("chat-log");
+
+      function addMessage(role, text) {
+        const line = document.createElement("div");
+        line.className = `chat-message ${role}`;
+        line.textContent = text;
+        chatLog.appendChild(line);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+
+      async function sendChatMessage(message) {
+        const response = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message })
+        });
+        if (!response.ok) {
+          throw new Error("Chat request failed");
+        }
+        return response.json();
+      }
+
+      chatForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const message = chatInput.value.trim();
+        if (!message) {
+          return;
+        }
+        addMessage("user", message);
+        chatInput.value = "";
+
+        try {
+          const data = await sendChatMessage(message);
+          addMessage("bot", data.reply || "I could not generate a reply.");
+        } catch (error) {
+          addMessage("bot", "Sorry, I am having trouble right now.");
+        }
+      });
+    </script>
+  </body>
+</html>

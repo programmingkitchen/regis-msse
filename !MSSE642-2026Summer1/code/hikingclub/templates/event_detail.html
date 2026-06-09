@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+    <title>Event Details | Georgia Hiking Club</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    >
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Event Details</h1>
+        <p>Review event information and sign up.</p>
+      </div>
+    </header>
+
+    <main class="container detail-shell">
+      <article class="panel detail-card">
+        <p class="detail-date">{{ event.month }} {{ event.day }} at {{ event.time }}</p>
+        <h2>{{ event.title }}</h2>
+        <p><strong>Location:</strong> {{ event.location }}</p>
+        <p><strong>Status:</strong> {{ event.status }} | {{ event.difficulty }}</p>
+        <p><strong>Capacity:</strong> {{ event.spots }}</p>
+        <p>{{ event.description }}</p>
+
+        <form action="{{ url_for('event_signup', event_id=event.id) }}" method="post">
+          <button class="primary-btn" type="submit">Sign Up For This Event</button>
+        </form>
+
+        <p class="detail-back">
+          <a href="{{ url_for('index') }}">Back to home page</a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Georgia Hiking Club Demo App | No database</p>
+      </div>
+    </footer>
+  </body>
+</html>
