@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+    <title>Sign Up Complete | Georgia Hiking Club</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    >
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Registration Complete</h1>
+      </div>
+    </header>
+
+    <main class="container detail-shell">
+      <article class="panel detail-card">
+        <h2>Thank you for signing up.</h2>
+        <p>You are registered for:</p>
+        <p><strong>{{ event.title }}</strong></p>
+        <p>{{ event.month }} {{ event.day }} at {{ event.time }}</p>
+
+        <p class="detail-back">
+          <a href="{{ url_for('index') }}">Return to home page</a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Georgia Hiking Club Demo App | No database</p>
+      </div>
+    </footer>
+  </body>
+</html>
