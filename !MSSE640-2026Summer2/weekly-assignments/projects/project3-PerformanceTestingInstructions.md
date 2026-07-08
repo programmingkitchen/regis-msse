@@ -1,4 +1,4 @@
-# Project 3: Performance Testing
+# Project 3: Performance Testing with Jmeter
 
 Revised: 3/31/26
 

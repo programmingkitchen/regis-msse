@@ -1,3 +1,3 @@
-# Project #2:  Threat Analysis
+# Project #2:  API testing with Postman
 
 ##  THIS IS A SAMPLE DOCUMENT TO ILLUSTRATE HOW TO STRUCTURE WHAT YOU TURN IN.
