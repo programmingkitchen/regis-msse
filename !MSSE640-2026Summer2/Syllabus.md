@@ -59,13 +59,13 @@ Crispin, L. & Gregory, J. (2009). *Agile Testing: A Practical Guide for Testers 
 | Week | Topics | Readings (Subject to change with notice) | Graded Assignments |
 |------|--------|------------------------------------------|-------------------|
 | 1 | Software Quality Assurance & Testing Fundamentals | Meyers: Ch 1, 2 | Class Participation<br> Introduction (not graded) |
-| 2 | Code Review and White Box Testing | Meyers: Ch 3 | Class Participation <br> Assignment #1: Unit Testing in a language of your choice |
+| 2 | Code Review and White Box Testing | Meyers: Ch 3 | Class Participation <br> PROJECT #1: Unit Testing in a language of your choice |
 | 3 | Test-Case Design | Meyers: Ch 4 | Class Participation <br> Vibe Coding Mini-Assignment #1 <br> Equivalence Classes/Boundary Values |
-| 4 | Unit Testing | Meyers: Ch 5 | Class Participation<br> Assignment #2: Integration Testing with Postman |
+| 4 | Unit Testing | Meyers: Ch 5 | Class Participation<br> PROJECT #2: Integration Testing with Postman |
 | 5 | Higher-Order Testing | Meyers: Ch 6 | Class Participation<br> Vibe Coding Mini-Assignment #2 <br> Decision Tables/Pairwise Testing |
-| 6 | Usability (User) Testing & Debugging | Meyers: Ch 7, 8 | Class Participation<br> Assignment #3: Performance Testing with JMeter |
+| 6 | Usability (User) Testing & Debugging | Meyers: Ch 7, 8 | Class Participation<br> PROJECT #3: Performance Testing with JMeter |
 | 7 | Test Automation Tools & Techniques in Agile Environment | Meyers: Ch 9 | Class Participation <br> Vibe Coding Mini-Assignment #3 <br> State-Transitions/Control Flow Testing |
-| 8 | Emerging Technology: DevOps Testing & Conclusion | Meyers: Ch 10 | Assignment #4: Usability Testing with Selenium <br> FINAL PRESENTATION |
+| 8 | Emerging Technology: DevOps Testing & Conclusion | Meyers: Ch 10 | PROJECT #4: Usability Testing with Selenium <br> FINAL PRESENTATION |
 
 ---
 
@@ -74,9 +74,9 @@ Crispin, L. & Gregory, J. (2009). *Agile Testing: A Practical Guide for Testers 
 | Course Assignments and Activities | Weight |
 |-----------------------------------|--------|
 | Class Participation (Slack Discussion) | 20% |
-| Major Assignments (4 total) | 40% |
-| Vibe Coding Mini-Assignments (2 total) | 20% |
-| Final Presentation | 20% |
+| Projects (4 total) | 40% |
+| Vibe Coding Mini-Assignments (3 total) | 30% |
+| Final Research Presentation | 10% |
 | **Total** | **100%** |
 
 ---
