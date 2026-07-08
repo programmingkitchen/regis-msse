@@ -1,0 +1,3 @@
+# Project #3:  Kali Penetration Testing Lab, Part 1
+
+##  THIS IS A SAMPLE DOCUMENT TO ILLUSTRATE HOW TO STRUCTURE WHAT YOU TURN IN.
