@@ -1,7 +1,7 @@
 # Group Project,  Part 1
 
 # Project 1: Unit Testing
-*Revised: 3/15/26*
+*Revised: 7/08/26*
 
 ## General Instructions
 
@@ -15,9 +15,9 @@ This is a *group collaboration assignment*. You will need to choose a group for 
 
 **Special Instructions for submitting in Git Hub.**
 
-1. Submit your assignment in World Class including a text file with the link to the Git Hub Repo for the assignment. I will not look for your assignment unless I see this, and if I don't see this I will assign a zero since it will appear to me that the assignment was not turned in.
-2. Your assignments in your Git Hub Repo should be organized in Folders and Markdown files in your Git Hub Repo. For example, you might have a folder for "**Project1UnitTest**" and in that folder you will have a separate markdown file clearly labeled with the assignment name.
-3. If you want to simulate a real world experience, you can make a new branch for your assignment while you are working on it, but before you submit, merge it into the main branch. I'll only look at the main branch in this class, and I will assume that any branches are works in progress.
+1. You should simulate a "real world experience," by doing your work in a new branch. Before you submit, merge it into the main branch (pull request). I'll only look at the main branch in this class, and I will assume that any branches are works in progress.  You can make as many branches as you want.  I won't look at them. 
+1. Submit the link to your Git Hub repository in Slack. I will not look for your assignment unless I see this, and if I don't see this I will assign a zero since it will appear to me that the assignment was not turned in.
+1. Your assignments in your Git Hub Repo should be organized in Directories with Markdown files.  See "sample-github-structure." 
 
 ## Part 1: Write a program in the language of your choice to determine "valid triangle" and "type of triangle" based on input of 3 sides
 
@@ -54,5 +54,5 @@ Write Unit Tests using the testing libraries for your language (e.g. Junit) to r
 | **Problems** | What kinds of problems did you encounter. |
 | **Screen Shots** | Includes screen shots showing successful program runs and Unit test runs. Clearly label each. |
 
-**Submit your Project#1 as a Git Hub Link in the World Class Dropbox titled for this activity by the deadline. Follow the Rubric directly above.**
+> **Submit the link to your Git Hub Repo in Slack after you merge your project into the main branch (pull request).  Follow the Rubric directly above.**
 

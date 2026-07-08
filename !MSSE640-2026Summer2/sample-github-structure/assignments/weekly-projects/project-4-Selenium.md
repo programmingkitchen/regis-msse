@@ -1,3 +1,3 @@
-# Project #4:  Kali Penetration Testing Lab, Part 2
+# Project #4:  UI testing with Selenium
 
 ##  THIS IS A SAMPLE DOCUMENT TO ILLUSTRATE HOW TO STRUCTURE WHAT YOU TURN IN.
